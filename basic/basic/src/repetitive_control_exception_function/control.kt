@@ -1,4 +1,4 @@
-package repetitive_control_exception
+package repetitive_control_exception_function
 
 /**
  * 자바에서 if-else는 Statement

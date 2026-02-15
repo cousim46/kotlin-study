@@ -1,4 +1,4 @@
-package repetitive_control_exception
+package repetitive_control_exception_function
 /**
  * 코틀린에서 반복문 다루는 방법
  *

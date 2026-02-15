@@ -1,7 +1,6 @@
-package repetitive_control_exception
+package repetitive_control_exception_function
 
 import java.io.FileInputStream
-import java.io.InputStream
 
 /**
  * 코틀린에서 예외를 다루는 방법

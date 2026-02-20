@@ -21,16 +21,32 @@ package oop
  *
  * */
 fun main() {
-
+  Sigleton.number = 1
+  anonymousMethod(object : Anonymous {
+    override fun play(): String {
+      return "anonymous"
+    }
+  })
 }
 
+fun anonymousMethod(anonymous: Anonymous) {
+  println(anonymous.play())
+}
 class PersonObject private constructor(var name: String,
                                  var age: Int)
 {
-  companion object {
+  companion object  {
     val MIN_AGE = 1
     fun newBaby(name: String): PersonObject {
       return PersonObject(name = name, age = MIN_AGE)
     }
   }
+}
+
+object Sigleton {
+  var number = 0
+}
+
+interface  Anonymous{
+  fun play() : String
 }
